@@ -6,14 +6,19 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            int number = 0;
+            
+            string output;
 
-            while(number <= 5)
+            Console.WriteLine("Please enter a word cat");
+            output = Console.ReadLine();
+
+            while(output != "cat")
             {
-                Console.WriteLine(number);
-                number = number + 1;
+                Console.WriteLine("Please enter a word cat");
+                output = Console.ReadLine();
             }
 
+            Console.WriteLine("Very well!");
             Console.ReadLine();
         }
     }
