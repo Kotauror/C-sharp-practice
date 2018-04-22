@@ -22,9 +22,15 @@
 //     {
 //         string carColor; 
 
-//         public Car(string color)
+//         public Car()
+//         {
+//             Console.WriteLine("Constructor with no parameters called!");
+//         }
+
+//         public Car(string color) : this()
 //         {
 //             this.carColor = color;
+//             Console.WriteLine("Constructor with color parameter called!");
 //         }
 
 //         public string Describe()
